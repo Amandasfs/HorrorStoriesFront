@@ -1,0 +1,45 @@
+<mat-toolbar class="header">
+  <mat-toolbar-row>
+    <span>
+      <img src="assets/img/icon.title.png">
+    </span>
+    <span>
+      <h1>Horror Stories</h1>
+    </span>
+    <span class="space"></span>
+
+    <button mat-icon-button color="warn" [matMenuTriggerFor]="menu" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.home.png">
+          <a href="">Home</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.myprofile.png">
+          <a href="">Meu Perfil</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.stories.png">
+          <a href="">Histórias</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.category.png">
+          <a href="">Categorias</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.movie.png">
+          <a href="">Recomendações</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.newbook.png">
+          <a href="">Nova Historia</a>
+        </button>
+        <button mat-menu-item>
+          <img class="icon_menu" src="assets/img/icon.speak.png">
+          <a href="">Fale Conosco!</a>
+        </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
